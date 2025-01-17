@@ -202,7 +202,7 @@
 
 @media (width >= 768px) {
   .main {
-    padding: 60px 10px;
+  gap: 60px;
   }
 
   .header__description {
@@ -224,6 +224,11 @@
   }
   .title-decor {
     height: 20px;
+  }
+
+  .main__grid-section .title__what {
+  block-size: 70px;
+  inline-size: 236px;
   }
 
   .main__grid-section .main__margin {
