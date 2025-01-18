@@ -221,6 +221,7 @@
   .main__section-how {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
+    gap: 30px;
   }
   .title-decor {
     height: 20px;
