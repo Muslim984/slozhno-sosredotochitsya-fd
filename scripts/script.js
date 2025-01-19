@@ -25,9 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// function setTheme(theme) {
+//   document.documentElement.className = '';
+//   document.documentElement.classList.add(`theme-${theme}`);
+//   localStorage.setItem('theme', theme);
+// }
+
 function setTheme(theme) {
-  document.documentElement.className = '';
-  document.documentElement.classList.add(`theme-${theme}`);
+document.documentElement.className = '';
+  if (theme === 'auto') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const systemTheme = isDarkMode ? 'dark' : 'light';
+    document.documentElement.classList.add(`theme-${systemTheme}`);
+    document.documentElement.classList.add('theme-auto');
+  } else {
+    document.documentElement.classList.add(`theme-${theme}`);
+  }
   localStorage.setItem('theme', theme);
 }
 
