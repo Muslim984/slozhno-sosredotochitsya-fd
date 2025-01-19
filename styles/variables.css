@@ -10,3 +10,27 @@
   --font-weight-title: 700;
   --font-weight-general: 400;
 }
+
+@media (prefers-color-scheme: dark) {
+  .page .theme_auto {
+    --bg-image: url(/images/cover-image-dark.png);
+    --main-color: #ff0070;
+    --main-text-color: #000028;
+    --description-text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --bg-color: #000028;
+    --border-color: #ff0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .page .theme_auto {
+    --bg-image: url(/images/cover-image-light.png);
+    --main-color: #ff8dcb;
+    --main-text-color: #353430;
+    --description-text-color: #353430;
+    --title-color: #ffc2e6;
+    --border-color: #353430;
+    --bg-color: #FFF1F7;
+  }
+}
