@@ -282,8 +282,8 @@
   }
 
   .main__grid-section .title__what {
-    block-size: none;
-    inline-size: none;
+    block-size: 100%;
+    inline-size: 100%;
   }
 
   .header__theme-menu-list {
