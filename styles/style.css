@@ -88,7 +88,7 @@
 }
 
 .title-decor {
-  color: var(--main-color);
+  color: var(--border-color);
   font-weight: var(--font-weight-title);
   line-height: var(--line-height);
   font-size: var(--font-size);
@@ -199,14 +199,22 @@
 }
 
 @media (width >= 768px) {
+  .page {
+    padding: 40px 20px;
+  }
+
   .main {
     gap: 80px;
-    padding: 40px 20px;
   }
 
   .header__description {
     margin-top: 162px;
   }
+
+  .header__description {
+  max-height: 117px;
+  max-width: 364px;
+}
 
   .header__theme-menu {
     margin-top: 192px;
