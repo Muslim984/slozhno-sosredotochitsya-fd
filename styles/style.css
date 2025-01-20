@@ -26,7 +26,7 @@
 
 .header__rec {
   position: absolute;
-  display: var(--rev-vision);
+  display: var(--rec-vision);
   align-items: center;
   gap: 10px;
   color: var(--main-color);
@@ -223,7 +223,7 @@
 
   .main {
     gap: 80px;
-    padding: 50px 20px 0 20px;
+    padding: 60px 20px 0 20px;
   }
 
   .header__description {

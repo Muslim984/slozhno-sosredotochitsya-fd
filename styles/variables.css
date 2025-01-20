@@ -44,6 +44,7 @@
     --title-color: #db00ff;
     --bg-color: #000028;
     --border-color: #ff0070;
+    --rec-vision: flex;
   }
 }
 
@@ -56,5 +57,6 @@
     --title-color: #ffc2e6;
     --border-color: #353430;
     --bg-color: #fff1f7;
+    --rec-vision: none;
   }
 }
