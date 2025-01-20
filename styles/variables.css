@@ -6,7 +6,7 @@
 :root {
   --font-size: 18px;
   --font-family: IBM Plex Mono;
-  --line-height: 20.4px;
+  --line-height: 23.4px;
   --font-weight-title: 700;
   --font-weight-general: 400;
 }
@@ -57,6 +57,4 @@
     --border-color: #353430;
     --bg-color: #fff1f7;
   }
-  
-  .
 }
