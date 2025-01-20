@@ -26,7 +26,7 @@
   background-attachment: fixed;
 }
 
-.theme-light .header__rec {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+/* .theme-light .header__rec {
+  Вам также нужно будет написать ряд подобных селекторов
   display: none;
-}
+} */

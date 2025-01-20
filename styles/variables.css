@@ -45,6 +45,10 @@
     --bg-color: #000028;
     --border-color: #ff0070;
   }
+
+  .header__rec {
+    display: flex;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -56,5 +60,9 @@
     --title-color: #ffc2e6;
     --border-color: #353430;
     --bg-color: #fff1f7;
+  }
+
+  .header__rec {
+    display: none !important;
   }
 }

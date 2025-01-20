@@ -199,13 +199,15 @@
 }
 
 @media (width >= 768px) {
-  .page {
-    padding-top: 10px;
+  
+
+  .header {
+    padding: 10px 20px 0 20px;
   }
 
-.header {
-  padding: 0 20px;
-}
+  .description__br {
+    width: 470px;
+  }
 
   .header__rec {
     padding-right: 10px;
@@ -225,13 +227,10 @@
   }
 
   .header__description {
+    max-height: 117px;
+    max-width: 364px;
     margin-top: 162px;
   }
-
-  .header__description {
-  max-height: 117px;
-  max-width: 364px;
-}
 
   .header__theme-menu {
     margin-top: 192px;
