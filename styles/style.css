@@ -300,6 +300,10 @@
     line-height: 129.53px;
   }
 
+  .description__br {
+    width: 649px;
+  }
+
   .footer__title {
     font-size: 157px;
     line-height: 129.53px;
