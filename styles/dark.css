@@ -26,3 +26,7 @@
   line-height: var(--line-height);
   background-attachment: fixed;
 }
+
+.theme-dark .header-rec {
+  display: flex;
+}
