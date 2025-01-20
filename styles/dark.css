@@ -16,6 +16,7 @@
   --title-color: #db00ff;
   --bg-color: #000028;
   --border-color: #ff0070;
+  --rev-vision: flex;
 }
 
 .theme-dark .page {
@@ -25,6 +26,7 @@
   font-family: var(--font-family);
   line-height: var(--line-height);
   background-attachment: fixed;
+  
 }
 
 /* .theme-dark .header__rec {
