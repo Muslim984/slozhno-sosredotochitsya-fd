@@ -15,18 +15,12 @@
   --description-text-color: #353430;
   --title-color: #ffc2e6;
   --border-color: #353430;
-  --bg-color: #FFF1F7;
+  --bg-color: #fff1f7;
   --rec-vision: none;
+  --another-border: #32312D66;
 }
 
-.theme-light .page {
-  background-color: var(--bg-color);
-  font-size: var(--font-size);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
-  background-attachment: fixed;
-  
-}
+
 
 /* .theme-light .header__rec {
   Вам также нужно будет написать ряд подобных селекторов

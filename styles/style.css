@@ -4,7 +4,28 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color);
   font-size: var(--font-size);
-  font-family: var(--font-family);
+  font-family: var(--font-family,'IBM Plex mono', monospace);
+  line-height: var(--line-height);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.theme-dark .page {
+  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--bg-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family,'IBM Plex mono', monospace);
+  line-height: var(--line-height);
+  background-attachment: fixed;
+}
+
+.theme-light .page {
+  background-color: var(--bg-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family,'IBM Plex mono', monospace);
   line-height: var(--line-height);
   background-attachment: fixed;
 }
@@ -16,11 +37,6 @@
   justify-items: end;
   align-items: start;
   position: relative;
-  background-image: var(--bg-image);
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px;
 }
 
@@ -60,6 +76,10 @@
 .link {
   text-shadow: 2px 2px 0 var(--main-color);
   cursor: pointer;
+}
+
+.link:default {
+  outline: none;
 }
 
 .link:hover {
@@ -105,10 +125,14 @@
   margin-top: 10px;
 }
 
+.another__style-title {
+  font-weight: var(--font-weight-general);
+}
+
 .gallery {
   display: grid;
   gap: 10px;
-  grid-template-rows: auto 142px 355px 237px 355px 237px;
+  grid-template-rows: auto auto auto auto auto;
 }
 
 .picture {
@@ -122,6 +146,7 @@
   object-fit: cover;
   object-position: center;
 }
+
 
 .header__theme-menu {
   display: grid;
@@ -143,12 +168,21 @@
   text-transform: lowercase;
 }
 
+.header__theme-menu-button:default {
+  outline: none;
+}
+
 .header__theme-menu-button:hover {
-  border: solid var(--border-color) 1px;
+  border: solid var(--another-border) 1px;
 }
 
 .header__theme-menu-button:focus {
   border-bottom: solid var(--border-color) 1px;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--border-color);
+  pointer-events: none;
 }
 
 .footer__title {
@@ -199,14 +233,8 @@
 }
 
 @media (width >= 768px) {
-  
-
   .header {
     padding: 20px 20px 0 20px;
-  }
-
-  .description__br {
-    width: 470px;
   }
 
   .header__rec {
@@ -227,7 +255,6 @@
   }
 
   .header__description {
-    max-height: 117px;
     max-width: 364px;
     margin-top: 162px;
   }
@@ -251,8 +278,7 @@
   }
 
   .main__grid-section .title__what {
-    block-size: 70px;
-    inline-size: 236px;
+    max-width: 100%;
   }
 
   .main__grid-section .main__margin {
@@ -268,7 +294,7 @@
   }
 
   .gallery {
-    grid-template-rows: auto 192px 230px 318px;
+    grid-template-rows: auto;
     display: grid;
     grid-template-columns: 1fr 230px 1fr;
     gap: 20px;
@@ -282,10 +308,10 @@
     grid-column: span 2;
   }
 
-  .picture__span-2 {
+  .picture__span {
     grid-row: span 2;
     height: auto;
-    aspect-ratio: auto;
+    /* aspect-ratio: auto; */
   }
 }
 
@@ -298,10 +324,6 @@
   .header__title {
     font-size: 157px;
     line-height: 129.53px;
-  }
-
-  .description__br {
-    width: 649px;
   }
 
   .footer__title {
@@ -338,7 +360,7 @@
   }
 
   .gallery {
-    grid-template-rows: auto 260px 315px 428px;
-    grid-template-columns: 1fr 315px 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns:auto;
   }
 }
