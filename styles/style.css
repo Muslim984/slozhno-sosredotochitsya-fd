@@ -151,14 +151,14 @@
 .header__theme-menu {
   display: grid;
   justify-content: end;
-  margin-top: 75px;
-  margin-right: 10px;
+  margin-top: 65px;
 }
 
 .header__theme-menu-list {
   gap: 10px;
   display: flex;
   flex-direction: column;
+  max-width: 70px;
 }
 
 .header__theme-menu-button {
@@ -166,6 +166,7 @@
   background-color: initial;
   border: 0.5px solid transparent;
   text-transform: lowercase;
+  width: 100%;
 }
 
 .header__theme-menu-button:default {
@@ -261,6 +262,11 @@
 
   .header__theme-menu {
     margin-top: 192px;
+    
+  }
+
+  .header__theme-menu-list {
+    width: 100%;
   }
 
   .main__section-why {
@@ -278,7 +284,8 @@
   }
 
   .main__grid-section .title__what {
-    max-width: 100%;
+    min-height: 70px;
+    max-width: 236px;
   }
 
   .main__grid-section .main__margin {
