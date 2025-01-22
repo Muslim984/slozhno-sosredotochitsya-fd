@@ -276,7 +276,7 @@
   }
 
   .main__section-how {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1.04fr 1fr 1.03fr;
     grid-auto-rows: auto;
     gap: 20px;
   }
