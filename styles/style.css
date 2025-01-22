@@ -166,7 +166,8 @@
   background-color: initial;
   border: 0.5px solid transparent;
   text-transform: lowercase;
-  width: 100%;
+  width: 70px;
+  height: 26px;
 }
 
 .header__theme-menu-button:default {
@@ -270,7 +271,7 @@
   }
 
   .main__section-why {
-    grid-template-columns: 236px 1fr 1fr;
+    grid-template-columns: 236px 1fr 2fr;
     grid-template-rows: auto;
   }
 
@@ -339,8 +340,13 @@
   }
 
   .main__grid-section .title__what {
-    block-size: 100%;
-    inline-size: 100%;
+    max-width: 315px;
+    min-height: 47px;
+  }
+
+  .main__section-why {
+    grid-template-columns: 236px 1fr 2.06fr;
+    grid-template-rows: auto;
   }
 
   .header__theme-menu-list {
