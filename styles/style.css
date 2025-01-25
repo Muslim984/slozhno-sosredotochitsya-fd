@@ -4,7 +4,7 @@
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--bg-color);
   font-size: var(--font-size);
-  font-family: var(--font-family,'IBM Plex mono', monospace);
+  font-family: var(--font-family, "IBM Plex mono", monospace);
   line-height: var(--line-height);
   background-image: var(--bg-image);
   background-position: center;
@@ -17,7 +17,7 @@
   /* Вам также нужно будет написать ряд подобных селекторов */
   background-color: var(--bg-color);
   font-size: var(--font-size);
-  font-family: var(--font-family,'IBM Plex mono', monospace);
+  font-family: var(--font-family, "IBM Plex mono", monospace);
   line-height: var(--line-height);
   background-attachment: fixed;
 }
@@ -25,7 +25,7 @@
 .theme-light .page {
   background-color: var(--bg-color);
   font-size: var(--font-size);
-  font-family: var(--font-family,'IBM Plex mono', monospace);
+  font-family: var(--font-family, "IBM Plex mono", monospace);
   line-height: var(--line-height);
   background-attachment: fixed;
 }
@@ -76,6 +76,7 @@
 .link {
   text-shadow: 2px 2px 0 var(--main-color);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .link:default {
@@ -87,6 +88,7 @@
 }
 
 .link:focus {
+  outline: none;
   border: solid var(--border-color) 1px;
   display: inline-block;
   box-sizing: border-box;
@@ -133,6 +135,8 @@
   display: grid;
   gap: 10px;
   grid-template-rows: auto auto auto auto auto;
+  font-size: 0;
+  line-height: 0;
 }
 
 .picture {
@@ -146,7 +150,6 @@
   object-fit: cover;
   object-position: center;
 }
-
 
 .header__theme-menu {
   display: grid;
@@ -179,6 +182,7 @@
 }
 
 .header__theme-menu-button:focus {
+  outline: none;
   border-bottom: solid var(--border-color) 1px;
 }
 
@@ -263,7 +267,6 @@
 
   .header__theme-menu {
     margin-top: 192px;
-    
   }
 
   .header__theme-menu-list {
@@ -321,6 +324,10 @@
     height: auto;
     /* aspect-ratio: auto; */
   }
+
+  .footer {
+    margin-top: 50px;
+  }
 }
 
 @media (width >= 1024px) {
@@ -351,11 +358,15 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+    margin: 0;
+    padding: 0;
+
   }
 
   .header__theme-menu {
     justify-self: center;
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   .header__description {
@@ -374,6 +385,23 @@
 
   .gallery {
     grid-template-rows: auto auto auto auto auto;
-    grid-template-columns:auto;
+    grid-template-columns: auto;
+  }
+
+  .main__large-what .main__margin {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .main__section-what {
+    display: grid;
+    grid-template-areas:
+      "title title title"
+      "article article article";
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .title__what {
+    grid-area: title;
   }
 }
