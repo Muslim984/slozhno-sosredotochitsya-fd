@@ -378,11 +378,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .main__large-what .main__margin {
-    grid-column: span 1;
-    grid-row: 2/3;
-  }
-
   .gallery {
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: auto;
