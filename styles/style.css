@@ -13,23 +13,6 @@
   background-size: cover;
 }
 
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  background-color: var(--bg-color);
-  font-size: var(--font-size);
-  font-family: var(--font-family, "IBM Plex mono", monospace);
-  line-height: var(--line-height);
-  background-attachment: fixed;
-}
-
-.theme-light .page {
-  background-color: var(--bg-color);
-  font-size: var(--font-size);
-  font-family: var(--font-family, "IBM Plex mono", monospace);
-  line-height: var(--line-height);
-  background-attachment: fixed;
-}
-
 .header {
   block-size: max(100vb, 668px);
   display: grid;
@@ -84,12 +67,12 @@
 }
 
 .link:hover {
-  border-bottom: solid var(--border-color) 1px;
+  border-bottom: solid var(--description-text-color) 1px;
 }
 
 .link:focus {
   outline: none;
-  border: solid var(--border-color) 1px;
+  border: solid var(--description-text-color) 1px;
   display: inline-block;
   box-sizing: border-box;
 }
@@ -161,7 +144,6 @@
   gap: 10px;
   display: flex;
   flex-direction: column;
-  max-width: 70px;
 }
 
 .header__theme-menu-button {
@@ -193,7 +175,7 @@
 
 .footer__title {
   font-weight: var(--font-weight-title);
-  font-size: 116px;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--title-color);
   text-shadow: 4px 4px 0 var(--main-color);
 }
@@ -245,14 +227,17 @@
 
   .header__rec {
     padding-right: 10px;
+    margin-top: 10px;
   }
 
   .decorated-zone::before {
     margin-right: 10px;
+    margin-top: 10px;
   }
 
   .decorated-zone::after {
     margin-left: 10px;
+    margin-bottom: 10px;
   }
 
   .main {
@@ -283,13 +268,14 @@
     grid-auto-rows: auto;
     gap: 20px;
   }
+
   .title-decor {
-    height: 20px;
+    max-height: 20px;
   }
 
   .main__grid-section .title__what {
-    min-height: 70px;
     max-width: 236px;
+    margin-bottom: 49px;
   }
 
   .main__grid-section .main__margin {
@@ -328,12 +314,22 @@
   .footer {
     margin-top: 50px;
   }
+
+  .footer__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
 
 @media (width >= 1024px) {
   .header {
     /* justify-self: center; */
     align-items: start;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  .header__theme-menu-button {
+    margin-top: 20px;
   }
 
   .header__title {
@@ -348,7 +344,7 @@
 
   .main__grid-section .title__what {
     max-width: 315px;
-    min-height: 47px;
+    margin-bottom: 25px;
   }
 
   .main__section-why {

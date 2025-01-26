@@ -20,6 +20,19 @@
   --another-border: #FF007066;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url(/images/cover-image-dark.png);
+    --main-color: #ff0070;
+    --main-text-color: #000028;
+    --description-text-color: #f1b2ce;
+    --title-color: #db00ff;
+    --bg-color: #000028;
+    --border-color: #ff0070;
+    --rec-vision: flex;
+    --another-border: #ff007066;
+  }
+}
 
 
 /* .theme-dark .header__rec {
