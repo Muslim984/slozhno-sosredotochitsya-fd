@@ -344,8 +344,9 @@
   }
 
   .footer {
-    padding-top: 10px;
+    padding-top: 0;
     padding-bottom: 0;
+    margin-top: 40px;
   }
 
   .main__grid-section .title__what {
