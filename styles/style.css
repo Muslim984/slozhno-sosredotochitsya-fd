@@ -315,6 +315,7 @@
   .footer {
     margin-top: 50px;
     padding: 20px;
+    padding-bottom: 30px;
   }
 
   .footer__title {
@@ -343,6 +344,7 @@
   }
 
   .footer {
+    padding-top: 10px;
     padding-bottom: 0;
   }
 
