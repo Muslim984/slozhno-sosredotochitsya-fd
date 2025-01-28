@@ -105,7 +105,7 @@
 }
 
 .grid__section {
-  grid-column: span 2;
+  grid-column: span 1;
   gap: 20px;
 }
 
@@ -114,9 +114,12 @@
 }
 
 .main__section-how .title__advice {
-  grid-column: span 2;
   align-self: start;
   margin-bottom: 20px;
+}
+
+.title-decor .title__how {
+  grid-column: span 2;
 }
 
 .similar__description {
